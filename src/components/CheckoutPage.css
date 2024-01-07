@@ -1,0 +1,177 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; 
+  color: #333; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  border-bottom: 2px solid #333; 
+  padding-bottom: 20px; 
+}
+
+/* Cart summary list */
+.checkout-cart-summary {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual cart item in the summary */
+.checkout-cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+/* Details of each cart item */
+.checkout-cart-item-details {
+  display: flex;
+  align-items: center;
+}
+
+/* Image of each cart item */
+.checkout-cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Description of each cart item */
+.checkout-item-description p {
+  margin: 5px 0;
+}
+
+/* Button for proceeding to payment */
+button {
+  background-color: #ff9900;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
+
+/* PaymentModal.css */
+
+/* PaymentModal.css */
+
+/* Modal overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Modal content styles */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Modal header styles */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Modal close button styles */
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+/* Modal form styles */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form input styles */
+.modal-input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Submit button styles */
+.modal-submit {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+.modal-submit:hover {
+  background-color: #e68a00;
+}
+
+/* Thank you message styles */
+.thank-you-message {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
